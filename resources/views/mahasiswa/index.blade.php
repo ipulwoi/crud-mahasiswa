@@ -23,6 +23,7 @@
                 <td>{{ $mhs->jurusan }}</td>
                 <td>
                     <a href="{{ route('mahasiswa.edit', $mhs->id) }}">Edit</a>
+                    <a href="{{ route('mahasiswa.show', $mhs->id) }}">lihat</a>
                     <form action="{{ route('mahasiswa.destroy', $mhs->id) }}" method="POST" style="display:inline;">
                         @csrf
                         @method('DELETE')

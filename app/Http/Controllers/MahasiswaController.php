@@ -56,4 +56,8 @@ class MahasiswaController extends Controller
 
         return redirect()->route('mahasiswa.index');
     }
+    public function show(Mahasiswa $mahasiswa)
+    {
+        return view('mahasiswa.show', compact('mahasiswa'));
+    }
 }
